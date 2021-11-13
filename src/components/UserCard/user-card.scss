@@ -1,0 +1,12 @@
+$primary: #ffede9;
+$secondary: #0e0fe1;
+.user-card {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  background-color: $primary;
+  color: $secondary;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(95%);
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { ProvideAuth } from './hooks/use-auth'
+import { ProvideAuth, useAuth } from './hooks/use-auth'
 import Layout from './components/Layout'
 import Landing from './pages/user-page/user-page';
 import Login from './pages/login-page/login-page';
