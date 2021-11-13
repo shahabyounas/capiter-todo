@@ -4,9 +4,10 @@ import './user-card.scss'
 
 const UserCard = (props) => {
 
-    const { id, avatar, first_name, last_name, email  } = props;
+    const { id, avatar, first_name, last_name, email, onClick } = props;
+    
     return (
-        <div className="user-card my-2 ">
+        <div className="user-card my-2" onClick={onClick}>
             <div id={id} className="d-flex justify-content-between align-items-center">
                 <div><img  src={avatar} alt="avatar" width="100"  height="100" /></div>
                 <div>{first_name}</div>

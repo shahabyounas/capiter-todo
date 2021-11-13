@@ -4,7 +4,7 @@ import { instance as api } from '../api-instance';
 
 const useApi = (path, options = {}) => {
 
-    const { defaultValue, dependencies = [] } = options;
+    const { defaultValue, dependencies = [], params } = options;
     const [error, setErrors] = useState('');
 
     const [data, setData] = useState(defaultValue);
@@ -16,7 +16,7 @@ const useApi = (path, options = {}) => {
         const fetchData = async () => {
             try {
 
-                const response = await api.get(`${baseUrl}/${path}`);
+                const response = await api.get(`${baseUrl}/${path}`, { params });
                 setData(response.data.data);
                 return response;
 

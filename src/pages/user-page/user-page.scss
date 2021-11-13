@@ -1,0 +1,10 @@
+$primary: #ffede9;
+$secondary: #0e0fe1;
+
+.user-page {
+  background-color: $primary;
+
+  &.user-page div {
+    margin: 1rem 0;
+  }
+}
