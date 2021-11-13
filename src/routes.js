@@ -1,4 +1,4 @@
-import Users from "./pages/user-page/user-page"
+import Users from "./pages/users-page/users-page";
 
 const routes = [
     {
@@ -8,7 +8,7 @@ const routes = [
     },
     {
         name: 'Result',
-        path: '/result',
+        path: '/user',
         component: Users,
     }
 ]
